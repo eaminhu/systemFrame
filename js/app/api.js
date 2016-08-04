@@ -4,10 +4,12 @@ define([
 	'moment',
 	'daterangepicker',
 	'zTree',
-	'zTreeCheck'
+	'zTreeCheck',
+	'wangEditor'
 	],
 	function($,bootstrapTable,moment,daterangepicker){
 		return {
+			
 			leftSideFold : function(){
 			var ml = $('.left-side-menu  li.menu-list');
 				ml.click(function(event) {
@@ -64,55 +66,67 @@ define([
 				},function(){
 					$(this).removeClass('nav-hover');
 				});
-		},
+			},
 		
 		
-		/*下拉表格*/
-		dropDownTable : function(ele){
-			var table = $('.'+ele);
-			table.on('click','tr',function(){
-				var checkVal = $(this).find('td.hidden input').val();
-		  		table.parents('.dropdown').find('.form-control').val(checkVal);
-			});
-		},
+			/*下拉表格*/
+			dropDownTable : function(ele){
+				var table = $('.'+ele);
+				table.on('click','tr',function(){
+					var checkVal = $(this).find('td.hidden input').val();
+			  		table.parents('.dropdown').find('.form-control').val(checkVal);
+				});
+			},
+			
 		
-		
-		/*树形结构*
-		/* ele 为树形节点的ID
-		   type为类型，true为复选框 false 为普通树形
-		 */
-		ztree : function(ele,type){
-			var setting = {
-				check: {
-					enable: type
-				},
-				data: {
-					simpleData: {
-						enable: true
+			/*树形结构*
+			/* ele 为树形节点的ID
+			   type为类型，true为复选框 false 为普通树形
+			 */
+			ztree : function(ele,type){
+				var setting = {
+					check: {
+						enable: type
+					},
+					data: {
+						simpleData: {
+							enable: true
+						}
 					}
-				}
-			};
-			
-			var zNodes =[
-				{ id:1, pId:0, name:"随意勾选 1", open:true},
-				{ id:11, pId:1, name:"随意勾选 1-1", open:true},
-				{ id:111, pId:11, name:"随意勾选 1-1-1"},
-				{ id:112, pId:11, name:"随意勾选 1-1-2"},
-				{ id:12, pId:1, name:"随意勾选 1-2", open:true},
-				{ id:121, pId:12, name:"随意勾选 1-2-1"},
-				{ id:122, pId:12, name:"随意勾选 1-2-2"},
-				{ id:2, pId:0, name:"随意勾选 2", checked:true, open:true},
-				{ id:21, pId:2, name:"随意勾选 2-1"},
-				{ id:22, pId:2, name:"随意勾选 2-2", open:true},
-				{ id:221, pId:22, name:"随意勾选 2-2-1", checked:true},
-				{ id:222, pId:22, name:"随意勾选 2-2-2"},
-				{ id:23, pId:2, name:"随意勾选 2-3"}
-			];
-	
-			
-			$.fn.zTree.init($("#"+ele), setting, zNodes);
-			
-		}
+				};
+				
+				var zNodes =[
+					{ id:1, pId:0, name:"随意勾选 1", open:true},
+					{ id:11, pId:1, name:"随意勾选 1-1", open:true},
+					{ id:111, pId:11, name:"随意勾选 1-1-1"},
+					{ id:112, pId:11, name:"随意勾选 1-1-2"},
+					{ id:12, pId:1, name:"随意勾选 1-2", open:true},
+					{ id:121, pId:12, name:"随意勾选 1-2-1"},
+					{ id:122, pId:12, name:"随意勾选 1-2-2"},
+					{ id:2, pId:0, name:"随意勾选 2", checked:true, open:true},
+					{ id:21, pId:2, name:"随意勾选 2-1"},
+					{ id:22, pId:2, name:"随意勾选 2-2", open:true},
+					{ id:221, pId:22, name:"随意勾选 2-2-1", checked:true},
+					{ id:222, pId:22, name:"随意勾选 2-2-2"},
+					{ id:23, pId:2, name:"随意勾选 2-3"}
+				];
+		
+				
+				$.fn.zTree.init($("#"+ele), setting, zNodes);
+				
+			},
+		
+			/*富文本编辑器*/
+			richEdit : function(ele){
+				var editor = new wangEditor(ele);
+				// 上传图片
+		        editor.config.uploadImgUrl = '/upload';
+		        editor.config.uploadParams = {
+		            // token1: 'abcde',
+		            // token2: '12345'
+		        };
+				 editor.create();
+			}
 		
 		
 	}

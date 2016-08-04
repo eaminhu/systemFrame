@@ -256,7 +256,7 @@
 					
 				</div>
 				
-				<div id="editor-container" class="container">
+				<div id="editor-container">
 			        <div id="editor-trigger"><p>请输入内容</p><p>&lt;script&gt;&lt;/script&gt;</p></div>
 			        <!-- <textarea id="editor-trigger" style="display:none;">
 			            <p>请输入内容...</p>
@@ -266,30 +266,18 @@
 			</div>
 		</section>
 	</body>
-	<!--<script type="text/javascript" src="js/jquery.2.1.0.js"></script>-->
-	<script type="text/javascript" src="js/jquyer.1.11.3.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-	<script src="js/wangEditor.min.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript" src="js/api.js"></script>
+	<script type="text/javascript" data-main="js/main" src="js/lib/require.2.1.11.js" ></script>
 	
 	<script type="text/javascript">
-	$(document).ready(function(){
+	/*$(document).ready(function(){
 		Api.datePicker('form_datetime'); //日历,传入类名
 		Api.datePicker('form_datetime1'); //日历,传入类名
 		Api.datePicker('form_datetime2'); //日历,传入类名
 		Api.leftSide();  //侧边栏收缩
 		
-		 var editor = new wangEditor('editor-trigger');
-		  // 上传图片
-        editor.config.uploadImgUrl = '/upload';
-        editor.config.uploadParams = {
-            // token1: 'abcde',
-            // token2: '12345'
-        };
-		 editor.create();
 		
-	});
+		
+	});*/
 		
 	</script>
 </html>

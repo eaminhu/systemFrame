@@ -25,6 +25,7 @@ require.config({
 		bootstrapTable : 'bootstrap-table.min',
 		zTree : 'jquery.ztree.core.min',
 		zTreeCheck : 'jquery.ztree.excheck',
+		wangEditor : 'wangEditor.min'
 	},
 	shim: {
 　　　　'moment': {   
@@ -50,6 +51,10 @@ require.config({
 		zTreeCheck : {
 			deps : ['jquery','zTree'],
 			exports : 'zTreeCheck'
+		},
+		wangEditor : {
+			deps : ['jquery'],
+			exports : 'wangEdit'
 		}
 　　}
 	
@@ -66,6 +71,7 @@ require(['../app/api'],function(api){
 	api.dropDownTable('dropdown-table');
 	api.ztree('treeDemo',false);
 	api.ztree('treeDemo2',true);
+	api.richEdit('editor-trigger');
 	
 });
 
@@ -89,3 +95,4 @@ require(['jquery','moment','daterangepicker'],function(){
 	});
 
 });
+

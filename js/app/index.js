@@ -1,7 +1,7 @@
 define(['jquery'],function($){
 	return {
 		in : function(){
-			alert('come in here !');		
+			console.log('come in here !');		
 		}
 	}
 	
