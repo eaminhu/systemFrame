@@ -8,6 +8,7 @@ define([
 	'wangEditor'
 	],
 	function($,bootstrapTable,moment,daterangepicker){
+		
 		return {
 			
 			leftSideFold : function(){
@@ -127,9 +128,11 @@ define([
 		        };
 				 editor.create();
 			}
+			
+			
 		
 		
-	}
-	
-});
+		}
+		
+	});
 	

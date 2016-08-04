@@ -25,7 +25,8 @@ require.config({
 		bootstrapTable : 'bootstrap-table.min',
 		zTree : 'jquery.ztree.core.min',
 		zTreeCheck : 'jquery.ztree.excheck',
-		wangEditor : 'wangEditor.min'
+		wangEditor : 'wangEditor.min',
+		layer : 'layer/layer'
 	},
 	shim: {
 　　　　'moment': {   
@@ -55,18 +56,35 @@ require.config({
 		wangEditor : {
 			deps : ['jquery'],
 			exports : 'wangEdit'
+		},
+		layer : {
+			deps: ['jquery']
 		}
 　　}
 	
 });
 
-require(['../app/index'],function(index){
-	index.in();
+
+
+require(['jquery'],function($){
+	$('#link').on('click',function(){
+		require(['../app/index'],function(index){
+			index.in();
+		});
+	});
+	
+});
+ 
+
+require(['jquery','layer'], function($,layer) { 
+	layer.msg('123');
+	
 });
 
-
-require(['../app/api'],function(api){
-	
+require(['../app/api','layer'],function(api,layer){
+	layer.config({
+		path:"js/lib/layer/"
+	});
 	api.leftSideFold();
 	api.dropDownTable('dropdown-table');
 	api.ztree('treeDemo',false);
