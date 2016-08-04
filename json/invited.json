@@ -1,0 +1,138 @@
+[
+  {
+    "id":"10001",
+    "invited_name": "张三",
+    "invited_phone": "15018735211",
+    "invited_email": "zhangsan@163.com",
+    "inviter_name": "李四",
+    "inviter_org": "众包项目组",
+    "invite_time": "2015年3月26日",
+    "status": "接受邀请"
+  }, {
+  "id":"10002",
+  "invited_name": "王五",
+  "invited_phone": "15018735211",
+  "invited_email": "zhangsan@163.com",
+  "inviter_name": "李四",
+  "inviter_org": "众包项目组",
+  "invite_time": "2015年3月26日",
+  "status": "未接受邀请"
+  }, {
+    "id":"10003",
+    "invited_name": "陆六",
+    "invited_phone": "15018735211",
+    "invited_email": "zhangsan@163.com",
+    "inviter_name": "李四",
+    "inviter_org": "TSG",
+    "invite_time": "2015年3月26日",
+    "status": "程序错误，发送邀请未成功"
+  },  {
+  "id":"10001",
+  "invited_name": "张三",
+  "invited_phone": "15018735211",
+  "invited_email": "zhangsan@163.com",
+  "inviter_name": "李四",
+  "inviter_org": "众包项目组",
+  "invite_time": "2015年3月26日",
+  "status": "接受邀请"
+}, {
+  "id":"10002",
+  "invited_name": "王五",
+  "invited_phone": "15018735211",
+  "invited_email": "zhangsan@163.com",
+  "inviter_name": "李四",
+  "inviter_org": "众包项目组",
+  "invite_time": "2015年3月26日",
+  "status": "未接受邀请"
+}, {
+  "id":"10003",
+  "invited_name": "陆六",
+  "invited_phone": "15018735211",
+  "invited_email": "zhangsan@163.com",
+  "inviter_name": "李四",
+  "inviter_org": "TSG",
+  "invite_time": "2015年3月26日",
+  "status": "程序错误，发送邀请未成功"
+},  {
+  "id":"10001",
+  "invited_name": "张三",
+  "invited_phone": "15018735211",
+  "invited_email": "zhangsan@163.com",
+  "inviter_name": "李四",
+  "inviter_org": "众包项目组",
+  "invite_time": "2015年3月26日",
+  "status": "接受邀请"
+}, {
+  "id":"10002",
+  "invited_name": "王五",
+  "invited_phone": "15018735211",
+  "invited_email": "zhangsan@163.com",
+  "inviter_name": "李四",
+  "inviter_org": "众包项目组",
+  "invite_time": "2015年3月26日",
+  "status": "未接受邀请"
+}, {
+  "id":"10003",
+  "invited_name": "陆六",
+  "invited_phone": "15018735211",
+  "invited_email": "zhangsan@163.com",
+  "inviter_name": "李四",
+  "inviter_org": "TSG",
+  "invite_time": "2015年3月26日",
+  "status": "程序错误，发送邀请未成功"
+},  {
+  "id":"10001",
+  "invited_name": "张三",
+  "invited_phone": "15018735211",
+  "invited_email": "zhangsan@163.com",
+  "inviter_name": "李四",
+  "inviter_org": "众包项目组",
+  "invite_time": "2015年3月26日",
+  "status": "接受邀请"
+}, {
+  "id":"10002",
+  "invited_name": "王五",
+  "invited_phone": "15018735211",
+  "invited_email": "zhangsan@163.com",
+  "inviter_name": "李四",
+  "inviter_org": "众包项目组",
+  "invite_time": "2015年3月26日",
+  "status": "未接受邀请"
+}, {
+  "id":"10003",
+  "invited_name": "陆六",
+  "invited_phone": "15018735211",
+  "invited_email": "zhangsan@163.com",
+  "inviter_name": "李四",
+  "inviter_org": "TSG",
+  "invite_time": "2015年3月26日",
+  "status": "程序错误，发送邀请未成功"
+},  {
+  "id":"10001",
+  "invited_name": "张三",
+  "invited_phone": "15018735211",
+  "invited_email": "zhangsan@163.com",
+  "inviter_name": "李四",
+  "inviter_org": "众包项目组",
+  "invite_time": "2015年3月26日",
+  "status": "接受邀请"
+}, {
+  "id":"10002",
+  "invited_name": "王五",
+  "invited_phone": "15018735211",
+  "invited_email": "zhangsan@163.com",
+  "inviter_name": "李四",
+  "inviter_org": "众包项目组",
+  "invite_time": "2015年3月26日",
+  "status": "未接受邀请"
+}, {
+  "id":"10003",
+  "invited_name": "陆六",
+  "invited_phone": "15018735211",
+  "invited_email": "zhangsan@163.com",
+  "inviter_name": "李四",
+  "inviter_org": "TSG",
+  "invite_time": "2015年3月26日",
+  "status": "程序错误，发送邀请未成功"
+}
+]

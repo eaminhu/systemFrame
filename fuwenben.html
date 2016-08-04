@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>富文本编辑器</title>
+	</head>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/public.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/iconfont.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/wangEditor.css"/>
+	<style type="text/css">
+		 #editor-trigger {
+            height: 400px;
+            /*max-height: 500px;*/
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            top:210px;
+        }
+	</style>
+	<body>
+		<section>
+			<div class="left-side">
+				<div class="logo">
+					<a href=""><img src="img/logo.png" /></a>
+				</div>
+				<div class="left-side-menu">
+					<ul class="nav-pills nav-stacked custom-nav">
+						<li class="">
+							<a href="index.html"><i class="iconfont icon-main"></i> <span>首页</span></a>
+						</li>
+						<li class="menu-list">
+							<a href="javascript:;"><i class="iconfont icon-dfk"></i> <span>需求管理</span><i class="iconfont icon-arror-r fold"></i></a>
+							<ul class="sub-menu-list">
+								<li>
+									<a href="">需求列表页面</a>
+								</li>
+								<li>
+									<a href="">需求新增</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-list nav-hover">
+							<a href="javascript:;"><i class="iconfont icon-qbdd"></i> <span>面试过程管理</span><i class="iconfont icon-arror-r fold"></i></a>
+							<ul class="sub-menu-list">
+								<li>
+									<a href="">需求列表页面</a>
+								</li>
+								<li>
+									<a href="">需求新增</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-list">
+							<a href="javascript:;"><i class="iconfont icon-mjfk"></i> <span>人员管理</span><i class="iconfont icon-arror-r fold"></i></a>
+							<ul class="sub-menu-list">
+								<li>
+									<a href="">需求列表页面</a>
+								</li>
+								<li>
+									<a href="">需求新增</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-list">
+							<a href="javascript:;"><i class="iconfont icon-pxsp"></i> <span>人员管理</span><i class="iconfont icon-arror-r fold"></i></a>
+							<ul class="sub-menu-list">
+								<li>
+									<a href="">需求列表页面</a>
+								</li>
+								<li>
+									<a href="">需求新增</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-list">
+							<a href="javascript:;"><i class="iconfont icon-dfk"></i> <span>人员管理</span><i class="iconfont icon-arror-r fold"></i></a>
+							<ul class="sub-menu-list">
+								<li>
+									<a href="">需求列表页面</a>
+								</li>
+								<li>
+									<a href="">需求新增</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-list">
+							<a href="javascript:;"><i class="iconfont icon-dfk"></i> <span>人员管理</span><i class="iconfont icon-arror-r fold"></i></a>
+							<ul class="sub-menu-list">
+								<li>
+									<a href="">需求列表页面</a>
+								</li>
+								<li>
+									<a href="">需求新增</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-list">
+							<a href="javascript:;"><i class="iconfont icon-dfk"></i> <span>人员管理</span><i class="iconfont icon-arror-r fold"></i></a>
+							<ul class="sub-menu-list">
+								<li>
+									<a href="">需求列表页面</a>
+								</li>
+								<li>
+									<a href="">需求新增</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-list">
+							<a href="javascript:;"><i class="iconfont icon-dfk"></i> <span>人员管理</span><i class="iconfont icon-arror-r fold"></i></a>
+							<ul class="sub-menu-list">
+								<li>
+									<a href="">需求列表页面</a>
+								</li>
+								<li>
+									<a href="">需求新增</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-list">
+							<a href="javascript:;"><i class="iconfont icon-dfk"></i> <span>人员管理</span><i class="iconfont icon-arror-r fold"></i></a>
+							<ul class="sub-menu-list">
+								<li>
+									<a href="">需求列表页面</a>
+								</li>
+								<li>
+									<a href="">需求新增</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-list">
+							<a href="javascript:;"><i class="iconfont icon-dfk"></i> <span>人员管理</span><i class="iconfont icon-arror-r fold"></i></a>
+							<ul class="sub-menu-list">
+								<li>
+									<a href="">需求列表页面</a>
+								</li>
+								<li>
+									<a href="">需求新增</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-list">
+							<a href="javascript:;"><i class="iconfont icon-dfk"></i> <span>人员管理</span><i class="iconfont icon-arror-r fold"></i></a>
+							<ul class="sub-menu-list">
+								<li>
+									<a href="">需求列表页面</a>
+								</li>
+								<li>
+									<a href="">需求新增</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-list">
+							<a href="javascript:;"><i class="iconfont icon-dfk"></i> <span>人员管理</span><i class="iconfont icon-arror-r fold"></i></a>
+							<ul class="sub-menu-list">
+								<li>
+									<a href="">需求列表页面</a>
+								</li>
+								<li>
+									<a href="">需求新增</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-list">
+							<a href="javascript:;"><i class="iconfont icon-dfk"></i> <span>人员管理</span><i class="iconfont icon-arror-r fold"></i></a>
+							<ul class="sub-menu-list">
+								<li>
+									<a href="">需求列表页面</a>
+								</li>
+								<li>
+									<a href="">需求新增</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="header-section">
+					<a class="toggle-btn"><i class="iconfont icon-menu"></i></a>
+
+					<div class="menu-right">
+						<ul class="notification-menu">
+							<li>
+								<a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+									<i class="iconfont icon-wdgwk"></i>
+									<span class="badge">8</span>
+								</a>
+
+							</li>
+							<li>
+								<a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+									<i class="iconfont icon-sz"></i>
+									<span class="badge">5</span>
+								</a>
+
+							</li>
+							<li>
+								<a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+									<i class="iconfont icon-qbdd"></i>
+									<span class="badge">4</span>
+								</a>
+
+							</li>
+							<li>
+								<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+									<img src="http://os.blog.163.com/common/ava.s?b=1&host=changfeng-liu" alt=""> John Doe
+									<span class="caret"></span>
+								</a>
+
+							</li>
+
+						</ul>
+					</div>
+					<!--notification menu end -->
+
+				</div>
+				<div class="tab-menu">
+					<ul class="clearfix">
+						<li>需求列表<i class="iconfont icon-close"></i></li>
+						<li>需求新增<i class="iconfont icon-close"></i></li>
+						<li>面试管理<i class="iconfont icon-close"></i></li>
+						<li>需求列表<i class="iconfont icon-close"></i></li>
+					</ul>
+				</div>
+				<div class="form-condition">
+					<form class="form-inline">
+					  <div class="form-group">
+					    <label for="exampleInputName2">Name:</label>
+					    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputEmail2">Email:</label>
+					    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+					  </div>
+					  
+					   <div class="form-group">
+					    <label for="datepicker">date:</label>
+					    <input type="email" class="form-control form_datetime" id="" minView="month" date-format="yyyy-mm-dd" autoClose="true">
+					  </div>
+					  <div class="form-group">
+					    <label for="datepicker">date:</label>
+					    <input type="email" class="form-control form_datetime1" id="" minView="hour" date-format="yyyy-mm-dd hh:ii" autoClose="true">
+					  </div>
+					  <div class="form-group">
+					    <label for="datepicker">date:</label>
+					    <input type="email" class="form-control form_datetime2" id="" minView="hour" date-format="yyyy-mm-ddThh:ii:ssZ" autoClose="false">
+					  </div>
+					  <button type="submit" class="btn btn-primary">Send invitation</button>
+					</form>
+					
+				</div>
+				
+				<div id="editor-container" class="container">
+			        <div id="editor-trigger"><p>请输入内容</p><p>&lt;script&gt;&lt;/script&gt;</p></div>
+			        <!-- <textarea id="editor-trigger" style="display:none;">
+			            <p>请输入内容...</p>
+			        </textarea> -->
+			    </div>
+				
+			</div>
+		</section>
+	</body>
+	<!--<script type="text/javascript" src="js/jquery.2.1.0.js"></script>-->
+	<script type="text/javascript" src="js/jquyer.1.11.3.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+	<script src="js/wangEditor.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/api.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		Api.datePicker('form_datetime'); //日历,传入类名
+		Api.datePicker('form_datetime1'); //日历,传入类名
+		Api.datePicker('form_datetime2'); //日历,传入类名
+		Api.leftSide();  //侧边栏收缩
+		
+		 var editor = new wangEditor('editor-trigger');
+		  // 上传图片
+        editor.config.uploadImgUrl = '/upload';
+        editor.config.uploadParams = {
+            // token1: 'abcde',
+            // token2: '12345'
+        };
+		 editor.create();
+		
+	});
+		
+	</script>
+</html>

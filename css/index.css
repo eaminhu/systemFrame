@@ -1,0 +1,52 @@
+.tab-menu{top: 44px;width: 100%;position: fixed;z-index: 998;}
+.tab-menu >ul{background-color:#f1f4f8;padding: 10px 0px;}
+.tab-menu li{float:left;line-height: 40px;padding: 0 30px;text-align: center;color: #999;border-top-left-radius: 8px;border-top-right-radius: 8px;background-color: #f6f7fb;position: relative;margin-right: 2px;border: solid 1px #ccd0d9;cursor: pointer;}
+.tab-menu li.on{background-color: #fff;}
+.tab-menu li i.iconfont{position: absolute;top: -9px;font-size: 10px;right: 9px;cursor: pointer;transition: all 0.3s;}
+.tab-menu li i.iconfont:hover{transform: rotate(180deg);}
+.form-con{padding: 20px;px; */min-height: 500px;/* top: 170px; */overflow-x: auto;/* position: relative; *//* background: #fff; */}
+.form-condition{/* position: relative; *//* top: 17px; */margin-left: 20px;/* z-index: 0; */}
+.form-inline .form-group{margin-bottom: 10px;}
+.form-condition button{margin-bottom: 10px;}
+.form-condition input.vinput{height: 30px;}
+.form-condition .form-control{
+    width: 170px;
+    margin-right: 28px;
+    padding: 0;
+}
+.dropdown .form-control.focus .dropdown-menu{display: block;} 
+.dropdown-menu{left: 84px;}
+.form-group label{width: 80px;text-align: right;}
+.caret{position: relative;right: 50px;}
+input#reservation {
+    height: 36px;
+    text-indent: 5px;
+    border: none;
+}
+.form-control fieldset {
+    width: 234px;
+    display: inline;
+    color: black;
+    height: 22px;
+}
+.form-control span {/* float: left; */padding-right: 10px;border: none;}
+.form-control .input-group-addon{border-radius: 0;height: 36px;}
+.input-group-addon{background: none;}
+.btn-primary, .btn-primary-a, .btn-primary-radio.selected {
+    background-color: #3c9adc;
+    border: #3c9adc 1px solid;
+}
+.container{
+    /* overflow-x: auto; */
+    padding-left: 0;
+    padding-right: 0;
+    margin: 10px 0 0 0;
+    width: 100%;
+    /* position: relative; */
+}
+.dropdown-menu{
+	/* height: 400px; */
+	overflow: scroll;
+}
+.fixed-table-header{margin-right: 17px!important;}
+/*.fixed-table-header table{width: 100%!important;}*/
