@@ -76,12 +76,20 @@ require(['jquery'],function($){
 });
  
 
-require(['jquery','layer'], function($,layer) { 
-	layer.msg('123');
+require(['jquery','layer'], function($,layer) {
+	var div = "<div style='padding:20px;magin:0 auto;text-align:center;'>或是天长共久时</div>";
+/*	layer.open({
+	  type: 1,
+	  skin: 'layui-layer-demo', //样式类名
+	 // closeBtn: 0, //不显示关闭按钮
+	  shift: 2,
+	  shadeClose: false, //开启遮罩关闭
+	  content: div
+	});*/
 	
 });
 
-require(['../app/api','layer'],function(api,layer){
+require(['../api','layer'],function(api,layer){
 	layer.config({
 		path:"js/lib/layer/"
 	});
