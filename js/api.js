@@ -7,7 +7,7 @@ define([
 	'zTreeCheck',
 	'wangEditor'
 	],
-	function($,bootstrapTable,moment,daterangepicker){
+	function($,bootstrapTable,moment,daterangepicker,ztree,ztreecheck,wangedit){
 		
 		return {
 			

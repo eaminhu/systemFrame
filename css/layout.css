@@ -1,4 +1,4 @@
-/*reset*/
+/*reset css*/
 
 body {
 	color: #7a7676;
@@ -446,3 +446,27 @@ toggle.active,
 .tab-menu li i.iconfont:hover {
 	transform: rotate(180deg);
 }
+
+
+/*component css*/
+
+.container {
+	padding-left: 0;
+	padding-right: 0;
+	margin: 10px 0 0 0;
+	width: 100%;
+}
+
+.btn-primary,
+.btn-primary-a,
+.btn-primary-radio.selected {
+	background-color: #3c9adc;
+	border: #3c9adc 1px solid;
+}
+
+
+
+.dropdown-table{
+	overflow: scroll;
+}
+/*component css end*/

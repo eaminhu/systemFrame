@@ -73,25 +73,7 @@ input#reservation {
 	background: none;
 }
 
-.btn-primary,
-.btn-primary-a,
-.btn-primary-radio.selected {
-	background-color: #3c9adc;
-	border: #3c9adc 1px solid;
-}
 
-.container {
-	/* overflow-x: auto; */
-	padding-left: 0;
-	padding-right: 0;
-	margin: 10px 0 0 0;
-	width: 100%;
-	/* position: relative; */
-}
-
-.dropdown-menu {
-	overflow: scroll;
-}
 
 .fixed-table-header {
 	margin-right: 17px!important;

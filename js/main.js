@@ -13,99 +13,91 @@
 	
 	* 
 	* */
-	
 
 require.config({
 	baseUrl: "js/lib",
-	paths : {
-		jquery : 'jquery.2.1.0',
-		bootstrap : 'bootstrap',
-		moment :  'moment',
-		daterangepicker : 'daterangepicker',
-		bootstrapTable : 'bootstrap-table.min',
-		zTree : 'jquery.ztree.core.min',
-		zTreeCheck : 'jquery.ztree.excheck',
-		wangEditor : 'wangEditor.min',
-		layer : 'layer/layer'
+	paths: {
+		jquery: 'jquery.2.1.0',
+		bootstrap: 'bootstrap',
+		moment: 'moment',
+		daterangepicker: 'daterangepicker',
+		bootstrapTable: 'bootstrap-table.min',
+		zTree: 'jquery.ztree.core.min',
+		zTreeCheck: 'jquery.ztree.excheck',
+		wangEditor: 'wangEditor.min',
+		layer: 'layer/layer'
 	},
-	shim: {
-　　　　'moment': {   
-　　　　　　deps: ['jquery'],
-　　　　　　exports: 'moment' 
-　　　　},
-	    bootstrap: {
-		  deps: ['jquery'],
-		  exports: 'bootstrap'
+	shim: {　　　　
+		'moment': {　　　　　　
+			deps: ['jquery'],
+			　　　　　　exports: 'moment'　　　　
 		},
-		'daterangepicker' : {
-			deps: ['jquery','moment'],
-　　　　　　 exports: 'daterangepicker' 
+		bootstrap: {
+			deps: ['jquery'],
+			exports: 'bootstrap'
 		},
-		'bootstrapTable' : {
-			deps: ['jquery','bootstrap'],
-　　　　　　 exports: 'bootstrapTable'
+		'daterangepicker': {
+			deps: ['jquery', 'moment'],
+			　　　　　　exports: 'daterangepicker'
 		},
-		'zTree' : {
-			deps : ['jquery'],
-			exports : 'zTree'
+		'bootstrapTable': {
+			deps: ['jquery', 'bootstrap'],
+			　　　　　　exports: 'bootstrapTable'
 		},
-		zTreeCheck : {
-			deps : ['jquery','zTree'],
-			exports : 'zTreeCheck'
+		'zTree': {
+			deps: ['jquery'],
+			exports: 'zTree'
 		},
-		wangEditor : {
-			deps : ['jquery'],
-			exports : 'wangEdit'
+		zTreeCheck: {
+			deps: ['jquery', 'zTree'],
+			exports: 'zTreeCheck'
 		},
-		layer : {
+		wangEditor: {
+			deps: ['jquery'],
+			exports: 'wangEdit'
+		},
+		layer: {
 			deps: ['jquery']
-		}
-　　}
-	
+		}　　
+	}
+
 });
 
-
-
-require(['jquery'],function($){
-	$('#link').on('click',function(){
-		require(['../app/index'],function(index){
-			index.in();
+require(['jquery'], function($) {
+	$('#link').on('click', function() {
+		var div = "<div style='padding:20px;magin:0 auto;text-align:center;'>测试弹出层</div>";
+		layer.open({
+			type: 1,
+			skin: 'layui-layer-demo', //样式类名
+			closeBtn: 1, //不显示关闭按钮
+			shift: 2,
+			shadeClose: false, //开启遮罩关闭
+			content: div
 		});
 	});
-	
-});
- 
 
-require(['jquery','layer'], function($,layer) {
-	var div = "<div style='padding:20px;magin:0 auto;text-align:center;'>或是天长共久时</div>";
-/*	layer.open({
-	  type: 1,
-	  skin: 'layui-layer-demo', //样式类名
-	 // closeBtn: 0, //不显示关闭按钮
-	  shift: 2,
-	  shadeClose: false, //开启遮罩关闭
-	  content: div
-	});*/
-	
 });
 
-require(['../api','layer'],function(api,layer){
+require(['jquery', 'layer'], function($, layer) {
+
+});
+
+require(['../api', 'layer'], function(api, layer) {
 	layer.config({
-		path:"js/lib/layer/"
+		path: "js/lib/layer/"
 	});
 	api.leftSideFold();
 	api.dropDownTable('dropdown-table');
-	api.ztree('treeDemo',false);
-	api.ztree('treeDemo2',true);
+	api.ztree('treeDemo', false);
+	api.ztree('treeDemo2', true);
 	api.richEdit('editor-trigger');
-	
+
 });
 
+require(['jquery', 'moment', 'daterangepicker'], function() {
 
-require(['jquery','moment','daterangepicker'],function(){
-    
-    /*双日历插件*/
-   
+	/*双日历插件*/
+
 	$('input[name="daterange"]').daterangepicker({
 		locale: {
 			format: 'YYYY-MM-DD'
@@ -121,4 +113,3 @@ require(['jquery','moment','daterangepicker'],function(){
 	});
 
 });
-
