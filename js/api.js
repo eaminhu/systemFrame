@@ -12,7 +12,7 @@ define([
 		return {
 			
 			leftSideFold : function(){
-			var ml = $('.left-side-menu  li.menu-list');
+				var ml = $('.left-side-menu  li.menu-list');
 				ml.click(function(event) {
 					event.stopPropagation();
 					if($('body').hasClass('left-side-collapsed')){
@@ -20,13 +20,13 @@ define([
 					}
 					$(this).addClass("active").siblings().removeClass('active');
 					if($('.sub-menu-list', this).is(':hidden')){
-						$('.sub-menu-list').slideUp();
-						$('.sub-menu-list', this).slideDown();
+						$('.sub-menu-list').hide();
+						$('.sub-menu-list', this).show(300);
 			            $('.menu-list i.fold').removeClass('fold-down');
 			            $('i.fold', this).addClass('fold-down');
 			            
 					}else{
-						$('.sub-menu-list', this).slideUp();
+						$('.sub-menu-list', this).hide();
 						$('i.fold', this).removeClass('fold-down');
 					}
 				});
@@ -121,16 +121,14 @@ define([
 			richEdit : function(ele){
 				var editor = new wangEditor(ele);
 				// 上传图片
-		        editor.config.uploadImgUrl = '/upload';
-		        editor.config.uploadParams = {
+		       // editor.config.uploadImgUrl = '/upload';
+		       // editor.config.uploadParams = {
 		            // token1: 'abcde',
 		            // token2: '12345'
-		        };
+		        //};
 				 editor.create();
 			}
 			
-			
-		
 		
 		}
 		

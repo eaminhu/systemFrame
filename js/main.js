@@ -17,7 +17,7 @@
 require.config({
 	baseUrl: "js/lib",
 	paths: {
-		jquery: 'jquery.2.1.0',
+		jquery: 'jquery.1.11.3',
 		bootstrap: 'bootstrap',
 		moment: 'moment',
 		daterangepicker: 'daterangepicker',
@@ -32,7 +32,7 @@ require.config({
 			deps: ['jquery'],
 			　　　　　　exports: 'moment'　　　　
 		},
-		bootstrap: {
+		'bootstrap': {
 			deps: ['jquery'],
 			exports: 'bootstrap'
 		},
@@ -48,15 +48,15 @@ require.config({
 			deps: ['jquery'],
 			exports: 'zTree'
 		},
-		zTreeCheck: {
+		'zTreeCheck': {
 			deps: ['jquery', 'zTree'],
 			exports: 'zTreeCheck'
 		},
-		wangEditor: {
+		'wangEditor': {
 			deps: ['jquery'],
 			exports: 'wangEdit'
 		},
-		layer: {
+		'layer': {
 			deps: ['jquery']
 		}　　
 	}
@@ -79,19 +79,20 @@ require(['jquery'], function($) {
 });
 
 require(['jquery', 'layer'], function($, layer) {
-
-});
-
-require(['../api', 'layer'], function(api, layer) {
+	/*配置layer路径*/
 	layer.config({
 		path: "js/lib/layer/"
 	});
+});
+
+require(['../api'], function(api) {
+
 	api.leftSideFold();
 	api.dropDownTable('dropdown-table');
 	api.ztree('treeDemo', false);
 	api.ztree('treeDemo2', true);
 	api.richEdit('editor-trigger');
-
+	
 });
 
 require(['jquery', 'moment', 'daterangepicker'], function() {

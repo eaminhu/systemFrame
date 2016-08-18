@@ -73,8 +73,9 @@ hr {
 	visibility: hidden;
 	content: ".";
 }
-/*reset end*/
 
+
+/*reset end*/
 
 
 /*left-side*/
@@ -86,6 +87,7 @@ hr {
 	width: 225px;
 	z-index: 9999;
 	transition: all 0.3s;
+	/* overflow-y: auto; */
 }
 
 .left-side .logo {
@@ -107,7 +109,7 @@ hr {
 
 .left-side-menu li,
 .left-side-menu li a {
-	color: #999;
+	color: #FFF;
 	font-size: 14px;
 	position: Relative;
 }
@@ -145,11 +147,23 @@ hr {
 }
 
 .left-side-menu li .sub-menu-list li {
-	padding-left: 0px;
+	/*animation: fadein .5s, 100ms;*/
 }
 
 .left-side-menu li .sub-menu-list li a {
+	animation: fadein .5s, 100ms;
 	padding-left: 40px;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+		padding-left: 0px;
+	}
+	100% {
+		opacity: 1;
+		padding-left: 40px;
+	}
 }
 
 .left-side-menu li .sub-menu-list li:hover {
@@ -159,7 +173,7 @@ hr {
 .left-side-menu li i.fold {
 	float: right;
 	margin-right: 20px;
-	transition: all 0.3s;
+	transition: all 0.5s;
 }
 
 .left-side-menu li i.fold-down {
@@ -261,6 +275,22 @@ hr {
 
 .left-side-collapsed .menu-list.nav-hover ul {
 	display: block!important;
+}
+
+.left-side-collapsed .left-side-menu li .sub-menu-list li a {
+	padding-left: 25px;
+	animation: fadeins .5s, 100ms;
+}
+
+@keyframes fadeins {
+	0% {
+		opacity: 0;
+		padding-left: 0px;
+	}
+	100% {
+		opacity: 1;
+		padding-left: 25px;
+	}
 }
 
 
@@ -368,10 +398,12 @@ toggle.active,
 	-webkit-border-radius: 2px;
 	border-radius: 18px;
 }
+
 .ztree-con {
 	padding: 100px 0;
 	position: fixed;
 }
+
 
 /*right-content end*/
 
@@ -402,7 +434,8 @@ toggle.active,
 }
 
 
-/*tab菜单*/
+/*tab导航*/
+
 .tab-menu {
 	top: 44px;
 	width: 100%;
@@ -464,9 +497,143 @@ toggle.active,
 	border: #3c9adc 1px solid;
 }
 
+/*.icheckbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: url(../img/green.png) no-repeat;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+.icheckbox{
+    background-position: 0 0;
+}
+.icheckbox.checked {
+    background-position: -48px 0;
+}
+.icheckbox input[type=checkbox] {
+	position: absolute;
+	opacity: 0;
+}
 
+.icheckbox .iCheck-helper {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	opacity: 0;
+	background: rgb(255, 255, 255);
+}*/
 
-.dropdown-table{
+.dropdown-table {
 	overflow: scroll;
 }
+
+
 /*component css end*/
+
+
+/*滚动条样式 */
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #eee;
+	margin: -2px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #aaa;
+	min-height: 150px;
+	min-width: 150px;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+	background: #555555
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+	background: #555555
+}
+
+/*单选框复选框*/
+input[type=checkbox]{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    cursor: pointer;
+    vertical-align: bottom;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 20px;
+}
+input[type=radio]{
+	color: #ccc;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px;
+}
+
+input[type=checkbox]:active,input[type=radio]:active {
+    border-color: #ccc;
+    background: #ebebeb;
+}       
+        
+input[type=checkbox]:hover {
+    border:solid 1px #3c9adc;
+    -webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+}
+
+input[type=checkbox]:checked,input[type=radio]:checked {
+   background: #fff;
+   color: #3c9adc;
+}
+
+input[type=checkbox]:checked::before {
+    content: "\e67c";
+    display: block;
+    position: absolute;
+    top: -3px;
+    right: -2px;
+}
+.icon-radio:before{
+	position: relative;
+	left: -2px;
+    top: -2px;
+    background: #fff;
+}
+input[type=radio]:checked::after {
+    content: "\e67b";
+    display: inline;
+    position: relative;
+    top: -2px;
+    right: 22px;
+}
+
+input[type=checkbox]:focus {
+    outline: none;
+    border-color: green;
+}

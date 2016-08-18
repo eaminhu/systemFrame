@@ -1,5 +1,7 @@
 
 	var util = {
+		
+		/*日历控件*/
 		datePicker : function(obj){
 			
 			var picker = $('.'+obj);
@@ -17,6 +19,7 @@
 			picker.datetimepicker(opt);
 		},
 		
+		/*左侧菜单折叠*/
 		leftSide : function(){
 			var ml = $('.left-side-menu  li.menu-list');
 			ml.click(function(event) {
@@ -64,6 +67,7 @@
 			
 		},
 		
+		/*下拉表格*/
 		dropdownTable : function(){
 			var table = $('.dropdown-table');
 			table.on('click','tr',function(){
@@ -71,6 +75,8 @@
 		  		table.parents('.dropdown').find('.form-control').val(checkVal);
 			});
 		}
+		
+		
 	};
 	
 	
